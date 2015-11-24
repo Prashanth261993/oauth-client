@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_filter :require_login, only: [:rb]
+  before_filter :require_login
 
   def index
     @articles = Article.order("published_at desc")

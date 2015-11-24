@@ -14,7 +14,7 @@
         Signed in as <%= current_user.name %>!
         <%= link_to 'Sign out', logout_path %>
     <% else %>
-        <%= link_to 'Sign in with Report Bee', reportbee_login_path %>
+        <% # link_to 'Sign in with Report Bee', reportbee_login_path %>
         <%= link_to 'Sign in using local form', login_path %>
     <% end %>
   </div>

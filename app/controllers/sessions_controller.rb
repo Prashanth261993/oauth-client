@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def authenticate
-    client = OAuth2::Client.new(ENV['OAUTH_APP_ID'], ENV['OAUTH_APP_SECRET'], :site => ENV['OAUTH_APP_URL'])
+    client = OAuth2::Client.new( ENV['OAUTH_APP_ID'], ENV['OAUTH_APP_SECRET'], :site => ENV['OAUTH_APP_URL'] )
 
     email = params[:session][:email]
     password = params[:session][:password]
